@@ -14,13 +14,26 @@
 
 <body>
     <div class="container">
-        <%@ include file="include/header_include.jsp" %>
+        <jsp:include page="include/header_include.jsp" />
 
         <main>
 			<h1>자기소개 페이지</h1>
+<%
+			response.setContentType("text/html");
+			response.setCharacterEncoding("UTF-8");
+			
+			String id = request.getParameter("id");
+			String pwd = request.getParameter("pwd");
+			String name = request.getParameter("name");
+			String phone = request.getParameter("phone");
+%>
+			<h1>아이디: <%=id %></h1>
+			<h1>비밀번호: <%=pwd %></h1>
+			<h1>이름: <%=name %></h1>
+			<h1>연락처: <%=phone %></h1>
         </main>
 
-        <%@ include file="include/footer_include.jsp" %>
+        <jsp:include page="include/footer_include.jsp" />
     </div>
     <script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

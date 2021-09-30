@@ -14,13 +14,20 @@
 
 <body>
     <div class="container">
-        <%@ include file="include/header_include.jsp" %>
+        <jsp:include page="include/header_include.jsp" />
 
         <main>
 			<h1>메인 페이지</h1>
+			<form action="forwardEx.jsp" method="get">
+				<label>아이디</label>
+				<input type="text" name="id">
+				<label>비밀번호</label>
+				<input type="password" name="pwd">
+				<input type="submit" value="전송">
+			</form>
         </main>
 
-        <%@ include file="include/footer_include.jsp" %>
+        <jsp:include page="include/footer_include.jsp" />
     </div>
     <script src="https://kit.fontawesome.com/c3df4d7d1c.js" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

@@ -32,5 +32,17 @@
 			<input type="submit" value="post전송">
 		</form>
 	</div>
+	
+	<div>
+		<label>아이디</label>
+		<label><%=session.getAttribute("id") %></label>
+		<label>비밀번호</label>
+		<label><%=session.getAttribute("password") %></label>
+		<label>이름</label>
+		<label><%=session.getAttribute("myName") %></label>
+		<label>flag</label>
+		<label><%=session.getAttribute("flag") %></label>
+		<label><%=session.getAttribute("test") %></label>
+	</div>
 </body>
 </html>

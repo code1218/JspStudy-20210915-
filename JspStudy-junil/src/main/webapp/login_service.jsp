@@ -4,7 +4,6 @@
     pageEncoding="UTF-8"%>
 <%!
 	UserDao userDao = new UserDaoImpl();
-	
 %>
 <%
 	//request = 요청
